@@ -23,9 +23,13 @@ namespace WebApps_ClientChapter.Controllers
             {
                 return View(db.ClientChapters.Where(x => x.ClientID.StartsWith(search) || search == null).ToList().ToPagedList(page ?? 1, 50));
             }
-            else
+            else if (searchBy == "Chapter Code")
             {
                 return View(db.ClientChapters.Where(x => x.ChapterCode.StartsWith(search) || search == null).ToList().ToPagedList(page ?? 1, 50));
+            }
+            else
+            {
+                return View(db.ClientChapters.Where(x => x.ChapterName.StartsWith(search) || search == null).ToList().ToPagedList(page ?? 1, 50));
             }
         }
 

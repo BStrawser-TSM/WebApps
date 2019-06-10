@@ -17,8 +17,9 @@
             @using (Html.BeginForm("Index", "ClientChapters", FormMethod.Get))
             {
                 <b>Search By:</b> @Html.RadioButton("searchBy", "Client ID", true) <text>Client ID</text>
-                                  @Html.RadioButton("searchBy", "ChapterCode") <text>Chapter Code</text>
-                                  <br />
+                                  @Html.RadioButton("searchBy", "Chapter Code") <text>Chapter Code</text>
+                                  @Html.RadioButton("searchBy", "Chapter Name") <text>Chapter Name</text>
+                <br />
                 @Html.TextBox("search") <input type="submit" value="Search" />
             }
         </p>
@@ -26,187 +27,187 @@
             <tr>
                 <th>Action</th>
                 <th>
-                    @Html.DisplayNameFor(model => model.First().ClientID)
+                    Client ID
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.First().ChapterCode)
+                    Chapter Code
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.First().ChapterName)
+                    Chapter Name
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.First().ClientLevel1)
+                    Client Level 1
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.First().ClientLevel2)
+                    Client Level 2
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.First().ClientLevel3)
+                    Client Level 3
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.First().ClientLevel4)
+                    Client Level 4
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.First().EnvelopeLine1)
+                    Envelope Line 1
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.First().EnvelopeLine2)
+                    Envelope Line 2
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.First().EnvelopeLine3)
+                    Envelope Line 3
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.First().EnvelopeLine4)
+                    Envelope Line 4
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.First().EnvelopeLine5)
+                    Envelope Line 5
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.First().EnvelopeClientName)
+                    Envelope Client Name
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.First().ClientAddressLine1)
+                    Client Address Line 1
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.First().ClientAddressLine2)
+                    Client Address Line 2
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.First().ClientAddressLine3)
+                    Client Address Line 3
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.First().ClientCity)
+                    Client City
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.First().ClientState)
+                    Client State
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.First().ClientZip)
+                    Client Zip
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.First().Uw)
+                    Uw
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.First().Commander)
+                    Commander
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.First().CommanderTitle)
+                    Commander Title
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.First().BillingChapter)
+                    Billing Chapter
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.First().AreaName)
+                    Area Name
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.First().CommanderLastName)
+                    Commander Last Name
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.First().ClientPhone)
+                    Client Phone
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.First().ClientFax)
+                    Client Fax
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.First().ClientEmailAddress)
+                    Client Email Address
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.First().OldChapterCode)
+                    Old Chapter Code
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.First().CustomerBillingNumber)
+                    Customer Billing Number
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.First().WebAddress)
+                    Web Address
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.First().Region)
+                    Region
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.First().Lockbox)
+                    Lockbox
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.First().UwBlackoutFromDate)
+                    Uw Blackout From Date
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.First().UwBlackoutToDate)
+                    Uw Blackout To Date
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.First().MD_COORD)
+                    MD_COORD
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.First().Commander2)
+                    Commander 2
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.First().CommanderTitle2)
+                    Commander Title 2
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.First().CommanderLastName2)
+                    Commander Last Name 2
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.First().BillingChapter2)
+                    Billing Chapter 2
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.First().ClientEmailAddress2)
+                    Client Email Address 2
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.First().MspThank)
+                    Msp Thank
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.First().LastThankYouDate)
+                    Last Thank You Date
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.First().SeedNames)
+                    Seed Names
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.First().OriginalName)
+                    Original Name
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.First().ClientName)
+                    Client Name
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.First().ChapterDesignation)
+                    Chapter Designation
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.First().Division)
+                    Division
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.First().Active)
+                    Active
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.First().Vertical)
+                    Vertical
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.First().ClientActiveDate)
+                    Client Active Date
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.First().FiscalYearBegins)
+                    Fiscal Year Begins
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.First().Flex1)
+                    Flex 1
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.First().Flex2)
+                    Flex 2
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.First().Flex3)
+                    Flex 3
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.First().Flex4)
+                    Flex 4
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.First().Flex5)
+                    Flex 5
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.First().CreateDate)
+                    Create Date
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.First().ModifiedDate)
+                    Modified Date
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.First().CreatedBy)
+                    Created By
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.First().ModifiedBy)
+                    Modified By
                 </th>
             </tr>
 
